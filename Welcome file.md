@@ -17,19 +17,37 @@
     
     # Pps assignment
 
-## 1:Write a program to print hello world
+## 1:Write a program to calculate experience of employees
 
 ```
-//To print  hello world
-#include<stdio.h>
+/#include<stdio.h>
 int main()
-{                     
- printf("\nHello world\n");
+{
+ int n,yr,sum=0;
+ printf("\n enter number of employees");
+ scanf("%d",&n);
+ for(int i=1;i<=n;i++)
+{
+ printf("\n Enter the number of years of experience of %d employee:\n ",i);
+ scanf("%d",&yr);
+ sum=sum+yr;
 }
+printf("Total experience is : %d\n",sum);
+return 0;
+}
+
 ```
 **OUTPUT:**
 ``` 
- Hello world
+  enter number of employees2
+
+ Enter the number of years of experience of 1 employee:
+ 6
+
+ Enter the number of years of experience of 2 employee:
+ 3
+Total experience is : 9
+
 ```
 ## 2:Write a program to fill your information
 

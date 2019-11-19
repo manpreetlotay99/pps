@@ -4,18 +4,18 @@
 ---
 
 <h3><b>Guru Nanak Dev Engineering College
-    ESC-18104/18105 Programming for Problem Solving</b>
+         ESC-18104/18105 Programming for Problem Solving</b>
   
   
      
-    Name-Manpreet kaur
-    Branch-InformationTechnology
-    Section - A2 
-    Roll Number - 1921062
+            Name-Manpreet kaur
+            Branch-InformationTechnology
+            Section - A2 
+            Roll Number - 1921062
     
-    # My C programes 
+    # Pps assignment
 
-## 1:To print hello world
+## 1:Write a program to print hello world
 
 ```
 //To print  hello world
@@ -29,7 +29,7 @@ int main()
 ``` 
  Hello world
 ```
-## 2:To fill your information
+## 2:Write a program to fill your information
 
 ```
   // To fill your information
@@ -76,7 +76,7 @@ My phone number is 9922115566
  My age is 25
  ```
 
-## 3:To find sum of two numbers
+## 3:Write a program to find sum of two numbers
 ```
 
      // to find sum of two numbers
@@ -98,7 +98,7 @@ Enter two numbers to get sum:45 55
  
 The result is :45 + 55= 100
 ```
-## 4:Sum and average of numbers
+## 4:Write a program to find sum and average of numbers
 ```
  // sum and average of number
 #include<stdio.h>
@@ -120,7 +120,7 @@ Enter five numbers:1 2 3 4 5
 The sum is:15
 The average is:3
 ```
-  ## 5:To find number is even or odd
+  ## 5:Write a program to find number is even or odd
   ```
        #include<stdio.h>
 int main()
@@ -144,7 +144,7 @@ The  number is even
 Enter a number:7
 The number is odd
 ```
-## 6:To show the size of int,float,char,double,long,short
+## 6:Write a program to show the size of int,float,char,double,long,short
 ```
  // size of int, float, char, double, long, short
 #include<stdio.h>
@@ -167,7 +167,7 @@ double:8
 short:2
 long:8
 ```
-## 7:To show area,perimeter,volume of square
+## 7:Write a program to show area,perimeter,volume of square
 ```
    
  //Area,premiter,volume of square
@@ -197,7 +197,7 @@ Perimeter of square:16
 Area of square:16
 Volume of square:64
 ```
-## 8:To show puts value upto n number using loop
+## 8:Write a program to show puts value upto n number using loop
 ```
 // to show punishment using loop
  #include<stdio.h>
@@ -225,7 +225,7 @@ WORK HARD AND ACHIEVE SUCCESS
 WORK HARD AND ACHIEVE SUCCESS 
 WORK HARD AND ACHIEVE SUCCESS
 ```
-## 9:To show area,diameter,circumference of circle 
+## 9:Write a program to show area,diameter,circumference of circle 
 ```
    #include<stdio.h>
  int main()
@@ -247,7 +247,7 @@ diameter of circle is:12.000000
 circumference of circle:37.680000
 Area of circle:113.040001
 ```
-## 10:To find area and volume of rectangle
+## 10:Write a program to find area and volume of rectangle
 ```
 //find area and volume of rectangle
 #include<stdio.h>
@@ -277,7 +277,7 @@ The area of rectangle is:12
 The volume is :48
 ```
  
- ##  11 .To represent a table of user input 
+ ##  11 .Write a program to represent a table of user input 
  
  ```
   // To represent a table of user input  number
@@ -308,7 +308,7 @@ return 0;
 15 x 9 = 135
 15 x 10 = 150
 ```
-## 12:To convert Fahrehnite to Celcius
+## 12:Write a program to convert Fahrehnite to Celcius
 ```
 //to convert fahrehnite to celcius
 #include<stdio.h>
@@ -327,88 +327,102 @@ return 0;
 Enter temp in fahrehnite :450
 The celcius value is:232.222229
 ```
-## 13: To show the table range 
+## 13: Write a program to show the table range 
 ```
 //To show a range of table upto user input
 #include<stdio.h>
 int main()
 {
- int a,b,n;
- printf("table of:");
- scanf("%d",&a);
- printf("\n enter the starting value of range:");
- scanf("%d",&b);
- printf("\n enter the last value of range:");
- scanf("%d",&n);
- for(b;b<=n;b++)
- printf("%d x %d = %d\n",a,b,a*b);
+ int a,b,i,x;
+ printf("Enter the starting no. and ending no.");
+ scanf("%d%d",&a,&b);
+ for(i=a;i<=b;i++)
+ {
+ for(x=1;x<=10;x++)
+{ 
+ printf("\n %d X %d = %d",i,x,i*x);
+}
+}
  return 0;
- }
+}
+
 ```
 **OUTPUT**:
 ```
 table of:5
+Enter the starting no. and ending no.2 3
 
- enter the starting value of range:20
-
- enter the last value of range:30
-5 x 20 = 100
-5 x 21 = 105
-5 x 22 = 110
-5 x 23 = 115
-5 x 24 = 120
-5 x 25 = 125
-5 x 26 = 130
-5 x 27 = 135
-5 x 28 = 140
-5 x 29 = 145
-5 x 30 = 150
-```
-## 14:To show even table
+ 2 X 1 = 2
+ 2 X 2 = 4
+ 2 X 3 = 6
+ 2 X 4 = 8
+ 2 X 5 = 10
+ 2 X 6 = 12
+ 2 X 7 = 14
+ 2 X 8 = 16
+ 2 X 9 = 18
+ 2 X 10 = 20
+ 3 X 1 = 3
+ 3 X 2 = 6
+ 3 X 3 = 9
+ 3 X 4 = 12
+ 3 X 5 = 15
+ 3 X 6 = 18
+ 3 X 7 = 21
+ 3 X 8 = 24
+ 3 X 9 = 27
+ 3 X 10 = 30
+ ```
+## 14:Write a program to show even table
 ```
 //To show only even table
 #include<stdio.h>
-int main(){
-int m;
-printf("tabel of:");
-scanf("%d",&m);
-if(m%2==0)
+int main()
 {
-for(int i=0;i<=20;i++)
-{
-printf("%d X %d=%d\n",m,i,m*i);
-}}
-else
-printf("enter even number\n");
+ int a,b,i,x;
+ printf("Enter the starting and ending number");
+ scanf("%d%d",&a,&b);
+ for(i=a;i<=b;i++)
+ {
+   if(i%2==0)
+   {
+    for(x=1;x<=10;x++)  
+     {
+      printf("\n%d X %d = %d ",i,x,i*x);
+     }
+  }
+}
+return 0;
+} 
 
-return 0;}
+
 ```
 **OUTPUT**:
 ```
-tabel of:16
-16 X 0=0
-16 X 1=16
-16 X 2=32
-16 X 3=48
-16 X 4=64
-16 X 5=80
-16 X 6=96
-16 X 7=112
-16 X 8=128
-16 X 9=144
-16 X 10=160
-16 X 11=176
-16 X 12=192
-16 X 13=208
-16 X 14=224
-16 X 15=240
-16 X 16=256
-16 X 17=272
-16 X 18=288
-16 X 19=304
-16 X 20=320
+Enter the starting and ending number2 5
+
+2 X 1 = 2 
+2 X 2 = 4 
+2 X 3 = 6 
+2 X 4 = 8 
+2 X 5 = 10 
+2 X 6 = 12 
+2 X 7 = 14 
+2 X 8 = 16 
+2 X 9 = 18 
+2 X 10 = 20 
+4 X 1 = 4 
+4 X 2 = 8 
+4 X 3 = 12 
+4 X 4 = 16 
+4 X 5 = 20 
+4 X 6 = 24 
+4 X 7 = 28 
+4 X 8 = 32 
+4 X 9 = 36 
+4 X 10 = 40 
 ```
-## 15: To show result of operands
+## 15: Write a program to show result of operands
 ```
 //To show results using operands(+,-,*,%,/)
 #include<stdio.h>
@@ -445,7 +459,7 @@ enter operator[+ - % / *]: *
 enter second number:10
 The result is:200.00
 ```
-## 16:To call a patterns of face and calculator
+## 16:Write a progrma to call a patterns of face and calculator
 ```
 // call a pattern of face or calculator
              #include<stdio.h>
@@ -530,29 +544,40 @@ ___________________
 |        |        |
 |________|________|
 ```
-## 17:To convert fahrehnite to celcius and kelvin
+## 17:Write a program to check number is prime or not 
 ```
-  // To covert  fahrenheit to celsius and kelvin
-                 #include<stdio.h>
- int main()
+ #include<stdio.h>
+int main()
+{
+ int a,i,p=0;
+ printf("Enter the number");
+ scanf("%d",&a);
+ for(i=1;i<=a;i++)
+{
+ if(a%i==0)
+  { 
+    p++;
+  }
+}
+ if(p==2)
  {
-  float a,b,c;
-  printf("Enter a fahrenheit value:");
-  scanf("%f",&a);
-b=((a-32.00)*5.00)/9.00;
- printf("celsius value is:%.2f\n",b);
+  printf("%d is prime number",a);
+ } 
+else{
+printf("%d is not prime",a);
+}
+ 
+return 0;
+}
 
- printf("kelvin value is:%.2f\n",c=b+273.15);
-  return 0;} 
 ```
 **OUTPUT**:
 ```
-Enter a fahrenheit value:450
-celsius value is:232.22
-kelvin value is:505.37
+Enter the number7
+7 is prime number
 ```
 
-## 18:To show stars pattern
+## 18:Write a program to show stars pattern
 ```
  // TO show stars using loop 
 #include<stdio.h>
@@ -585,7 +610,7 @@ int main()
 *
 ```
  
- ## 19:To show factorial result
+ ## 19:Write a program to show factorial result
  ```
  //To show factorial of user input
 #include<stdio.h>
@@ -608,41 +633,40 @@ return 0;
 Enter the factorial of:5
 5 X 4 X 3 X 2 X 1 X = 120
 ```
- ## 20:To show stars pattern 
+ ## 20:Write a program to print range of prime numbers
  ```
- //to show star pattern for n numbers
-#include<stdio.h>
+ #include<stdio.h>
 int main()
 {
- int i,j,k;
- printf("Enter the value upto pattern is shown:");
- scanf("%d",&k);
-
- for(i=1;i<=k;i++)
+int a,b,i,n,p=0;
+printf("Enter starting and ending number");
+scanf("%d%d",&a,&b);
+for(i=a;i<=b;i++){
+p=1;
+for(n=2;n<i;n++)
 {
-  for(j=1;j<=i;j++)
+if(i%n==0)
 {
-  printf("* ");
- }
- printf("\n");
- }
- return 0;
+p=0;
+break;
 }
+}
+if(p==1){
+printf ("%d is a prime number",i);
+}
+}
+return 0;
+}
+
 ```
 **OUTPUT**:
 ```
-Enter the value upto pattern is shown:8
-* 
-* * 
-* * * 
-* * * * 
-* * * * * 
-* * * * * * 
-* * * * * * * 
-* * * * * * * * 
+
+2 11
+2 is a prime number3 is a prime number5 is a prime number7 is a prime number11 is a prime number
 ```
 
-## 21:Matrix multipication
+## 21:Write a program to show Matrix multipication
  ```
 #include<stdio.h>
 int main()
@@ -711,6 +735,69 @@ product of the matrix:
 15      22
 23      34
 ```
+## 22:Write a program to show Matrix addition
+ ```
+  #include<stdio.h>
+int main()
+{
+  int row,col,row1,col1,i,j;
+   int arr[10][10],arr1[10][10],sum[10][10];
+ printf("Enter the rows of 1 matrix");
+ scanf("%d",&row);
+ printf("Enter the columns of 1 matrix");
+ scanf("%d",&col); 
+ printf("Enter the elements of 1 matrix");
+  for(i=0;i<row;i++)
+   {
+     for(j=0;j<col;j++)
+        {
+          scanf("%d",&arr[i][j]);
+        }
+   }
+ printf("Enter the elements of 2 matrix");
+ for(i=0;i<row;i++)
+   {  
+      for(j=0;j<col;j++)
+        {
+            scanf("%d",&arr1[i][j]);
+       }
+    }
+for(i=0;i<row;i++)
+{ 
+   for(j=0;j<col;j++)
+   {
+      sum[i][j]= arr[i][j]+arr1[i][j];
+     }
+}
+for(i=0;i<row;i++)
+ { 
+    for(j=0;j<col;j++)
+     {
+         printf("  %d",sum[i][j]);
+           if(j==col-1)
+                 printf("\n\n");
+      }
+ }
+return 0;
+}
+ ```
+ **OUTPUT**:
+ ```
+ Enter the rows of 1 matrix2
+Enter the columns of 1 matrix2
+Enter the elements of 1 matrix1
+2
+3
+4
+Enter the elements of 2 matrix2
+3
+4
+5
+  3  5
+
+  7  9
+```
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTk0Njc2OTc1MiwxNjU2OTAxNTI4LC03Mj
 g2NzQ5NjUsLTc4ODExMDUzMywxNDAxMzg0NjY0LDE2MTgwMjUy

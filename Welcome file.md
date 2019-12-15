@@ -52,7 +52,7 @@ Total experience is : 9
 ## 2:Write a program to fill your information
 
 ```
-  // To fill your information
+  
 #include<stdio.h>
 
   void info();
@@ -82,45 +82,51 @@ printf("\nThe name is %s\nYour roll no is %d\nMy phone number is %ld\n My age is
 **OUTPUT:**
 ```
 Enter your information:
-Name = Jony
+Name = Raman
 
-Roll no=100012
+Roll no=19753
 
-Age = 25
+Age = 20
 
-Phone no.= 9922115566
+Phone no.= 9877456788
 
-The name is Jony
-Your roll no is 100012
-My phone number is 9922115566
- My age is 25
+The name is Raman
+Your roll no is 19753
+My phone number is 9877456788
+ My age is 20
  ```
 
-## 3:Write a program to find sum of two numbers
+## 3:Write a program to check whether the number is positive or negative
 ```
-
-     // to find sum of two numbers
-     #include<stdio.h>
+    #include<stdio.h>
 int main()
-{                                                                                      
+{
  int a;
- int b;
- int c ;
- printf("Enter two numbers to get sum:");
- scanf("%d  %d",&a,&b);
- printf(" \nThe result is :%d + %d= %d\n",a,b,c=a+b);
-    return 0;
+ printf("Enter the number to be checked ");
+ scanf("%d",&a);
+ if(a>0)
+ {
+  printf("Number is positive");
  }
+  else if(a<0)
+ {
+ printf("Number is negative");
+ }
+ else{
+ printf("Number is zero");
+ }
+ return 0;
+printf("\n");
+}
 ```
 **OUTPUT**:
 ```
-Enter two numbers to get sum:45 55
+Enter two number to be checked 5
  
-The result is :45 + 55= 100
+Number is positive
 ```
 ## 4:Write a program to find sum and average of numbers
 ```
- // sum and average of number
 #include<stdio.h>
   int main()
  {                                 
@@ -156,70 +162,40 @@ int main()
 ```
 **OUTPUT**:
 ```
-Enter a number:4
+Enter a number:8
 The  number is even
 ```
 ***OR***
 ```
-Enter a number:7
+Enter a number:5
 The number is odd
 ```
-## 6:Write a program to show the size of int,float,char,double,long,short
+## 6:Write a program to find the reverse of a number
 ```
- // size of int, float, char, double, long, short
-#include<stdio.h>
+ #include<stdio.h>
 int main()
-{                                   
- printf("Integer:%d\n",sizeof(int));
- printf("float:%d\n",sizeof(float));
- printf("character:%d\n",sizeof(char));
- printf("double:%d\n",sizeof(double));
- printf("short:%d\n",sizeof(short));
- printf("long:%d\n",sizeof(long));
- }
-```
-**OUTPUT**:
-```
-Integer:4
-float:4
-character:1
-double:8
-short:2
-long:8
-```
-## 7:Write a program to show area,perimeter,volume of square
-```
-   
- //Area,premiter,volume of square
-  #include<stdio.h>
-void square();
-int main()
-{     
- square();
- return 0;
-}                                    
-void square()
 {
- int side;
- printf("Enter the side of square:");
- scanf("%d",&side);
-
- printf("\nPerimeter of square:%d",4*side);
- printf("\nArea of square:%d",side*side);
- printf("\nVolume of square:%d\n",side*side*side);
+ int no,rem,rev,x; 
+ printf("Enter the number");
+scanf("%d",&x);
+no=x;
+while(x>0)
+{ 
+  rem=x%10;
+ rev=(rev*10)+rem;
+ x= x/10;
+}
+printf("Reverse of %d is %d\n ",no,rev);
+return 0;
 }
 ```
 **OUTPUT**:
 ```
-Enter the side of square:4
-
-Perimeter of square:16
-Area of square:16
-Volume of square:64
+Enter the number481
+Reverse of 481 is 184
 ```
-## 8:Write a program to show puts value upto n number using loop
+## 7:Write a program to show puts value upto n number using loop
 ```
-// to show punishment using loop
  #include<stdio.h>
  int main()
  {
@@ -245,6 +221,35 @@ WORK HARD AND ACHIEVE SUCCESS
 WORK HARD AND ACHIEVE SUCCESS 
 WORK HARD AND ACHIEVE SUCCESS
 ```
+## 8:Write a program to show area,perimeter,volume of square
+```
+ 
+  #include<stdio.h>
+void square();
+int main()
+{     
+ square();
+ return 0;
+}                                    
+void square()
+{
+ int side;
+ printf("Enter the side of square:");
+ scanf("%d",&side);
+
+ printf("\nPerimeter of square:%d",4*side);
+ printf("\nArea of square:%d",side*side);
+ printf("\nVolume of square:%d\n",side*side*side);
+}
+```
+**OUTPUT**:
+```
+Enter the side of square:2
+
+Perimeter of square:8
+Area of square:4
+Volume of square:8
+```
 ## 9:Write a program to show area,diameter,circumference of circle 
 ```
    #include<stdio.h>
@@ -254,22 +259,21 @@ WORK HARD AND ACHIEVE SUCCESS
 float  const pi=3.14;
    printf("Enter radius of circle:");
     scanf("%f\n",&a);
-  printf("diameter of circle is:%f\n",2*a);
-  printf("circumference of circle:%f\n",2*pi*a);
-  printf("Area of circle:%f\n",pi*a*a);
+  printf("diameter of circle is:%.2f\n",2*a);
+  printf("circumference of circle:%.2f\n",2*pi*a);
+  printf("Area of circle:%.2f\n",pi*a*a);
 return 0;
  } 
 ```
 **OUTPUT**:
 ```
-Enter radius of circle:6
-diameter of circle is:12.000000
-circumference of circle:37.680000
-Area of circle:113.040001
+Enter radius of circle:3
+diameter of circle is:6.00
+circumference of circle:18.85
+Area of circle:28.26
 ```
 ## 10:Write a program to find area and volume of rectangle
 ```
-//find area and volume of rectangle
 #include<stdio.h>
 int main()
 {
@@ -287,20 +291,38 @@ int main()
  ```
  **OUTPUT**:
  ```
- Enter length of rectangle:4 
+ Enter length of rectangle:2 
 
-Enter breadth of rectangle:3 
+Enter breadth of rectangle:4
 
-Enter height of rectangle:4
+Enter height of rectangle:3
 
-The area of rectangle is:12
-The volume is :48
+The area of rectangle is:8
+The volume is :24
 ```
  
- ##  11 .Write a program to represent a table of user input 
+ ##  11:Write a program to convert Fahrehnite to Celcius
+```
+#include<stdio.h>
+int main(){
+float f,c;
+printf("Enter temp in fahrehnite :");
+scanf("%f",&f);
+c=((f-32)*5)/9;
+printf("The celcius value is:%f\n",c);
+
+return 0;
+}
+```
+**OUTPUT**:
+```
+Enter temp in fahrehnite :450
+The celcius value is:232.222229
+```
+## 12:Write a program to represent a table of user input 
  
  ```
-  // To represent a table of user input  number
+
  #include<stdio.h>
  int main()
  {
@@ -328,28 +350,9 @@ return 0;
 15 x 9 = 135
 15 x 10 = 150
 ```
-## 12:Write a program to convert Fahrehnite to Celcius
-```
-//to convert fahrehnite to celcius
-#include<stdio.h>
-int main(){
-float f,c;
-printf("Enter temp in fahrehnite :");
-scanf("%f",&f);
-c=((f-32)*5)/9;
-printf("The celcius value is:%f\n",c);
-
-return 0;
-}
-```
-**OUTPUT**:
-```
-Enter temp in fahrehnite :450
-The celcius value is:232.222229
-```
 ## 13: Write a program to show the table range 
 ```
-//To show a range of table upto user input
+
 #include<stdio.h>
 int main()
 {
@@ -369,8 +372,7 @@ int main()
 ```
 **OUTPUT**:
 ```
-table of:5
-Enter the starting no. and ending no.2 3
+table of:5Enter the starting no. and ending no.2 3
 
  2 X 1 = 2
  2 X 2 = 4
@@ -395,7 +397,7 @@ Enter the starting no. and ending no.2 3
  ```
 ## 14:Write a program to show even table
 ```
-//To show only even table
+
 #include<stdio.h>
 int main()
 {
@@ -444,7 +446,7 @@ Enter the starting and ending number2 5
 ```
 ## 15: Write a program to show result of operands
 ```
-//To show results using operands(+,-,*,%,/)
+
 #include<stdio.h>
 int main()
 {
@@ -474,15 +476,14 @@ return 0;
 
 **OUTPUT**:
 ```
-enter first  number:20
+enter first  number:8
 enter operator[+ - % / *]: *
 enter second number:10
-The result is:200.00
+The result is:80.00
 ```
 ## 16:Write a progrma to call a patterns of face and calculator
 ```
-// call a pattern of face or calculator
-             #include<stdio.h>
+#include<stdio.h>
 
 void calculator();
 void face();
@@ -597,69 +598,13 @@ Enter the number7
 7 is prime number
 ```
 
-## 18:Write a program to show stars pattern
-```
- // TO show stars using loop 
-#include<stdio.h>
-int main()
-{ int i,j,k;
- printf("Enter the no. to show pattern:");
- scanf("%d",&k);
- 
-  for(i=k;i>=1;i--)
- {
-  for(j=i;j>=1;j--)
- {
-  printf("* ");
- }
- printf("\n");
- }
- return 0;
- }
- ```
- **OUTPUT**:
- ```
- Enter the no. to show pattern:8
-* * * * * * * * 
-* * * * * * * 
-* * * * * * 
-* * * * * 
-* * * * 
-* * * 
-* * 
-*
-```
- 
- ## 19:Write a program to show factorial result
- ```
- //To show factorial of user input
-#include<stdio.h>
-int main()
-{
- int a,result=1;
- printf("Enter the factorial of:");
- scanf("%d",&a);
- for(int i=a;i>=1;i--)
-{
-printf("%d X ",i);
-result=result*i;
-}
-printf("= %d\n",result);
-return 0;
-}
-```
-**OUTPUT**:
-```
-Enter the factorial of:5
-5 X 4 X 3 X 2 X 1 X = 120
-```
- ## 20:Write a program to print range of prime numbers
+## 18:Write a program to print range of prime numbers
  ```
  #include<stdio.h>
 int main()
 {
 int a,b,i,n,p=0;
-printf("Enter starting and ending number");
+printf("Enter starting and ending number ");
 scanf("%d%d",&a,&b);
 for(i=a;i<=b;i++){
 p=1;
@@ -682,11 +627,123 @@ return 0;
 **OUTPUT**:
 ```
 
-2 11
+Enter the starting and ending number 2 11
 2 is a prime number3 is a prime number5 is a prime number7 is a prime number11 is a prime number
 ```
 
-## 21:Write a program to show Matrix multipication
+ ## 19:Write a program to show factorial result
+ ```
+#include<stdio.h>
+int main()
+{
+ int a,result=1;
+ printf("Enter the factorial of:");
+ scanf("%d",&a);
+ for(int i=a;i>=1;i--)
+{
+printf("%d X ",i);
+result=result*i;
+}
+printf("= %d\n",result);
+return 0;
+}
+```
+**OUTPUT**:
+```
+Enter the factorial of:5
+5 X 4 X 3 X 2 X 1 = 120
+```
+ ## 20:Write a program to find largest number from a matrix
+ ```
+ #include<stdio.h>
+int main()
+{
+ 
+   int arr[50],size,i,large;
+     printf("Enter size of array");
+      scanf("%d",&size);
+      printf("Enter the elements");
+       for(i=0;i<size;i++)
+           scanf("%d",&arr[i]);
+         large=arr[0];
+    for(i =0;i<size;i++)
+     {
+        if(large<arr[i])
+           large=arr[i];
+       }
+printf("Largest element of %d",large);
+return 0;
+}
+ ```
+ **OUTPUT**:
+ ```
+ Enter size of array5
+Enter the elements2 5 6 9 3
+Largest element of 9
+ ```
+## 21:Write a program to show Matrix addition
+ ```
+  #include<stdio.h>
+int main()
+{
+  int row,col,row1,col1,i,j;
+   int arr[10][10],arr1[10][10],sum[10][10];
+ printf("Enter the rows of 1 matrix");
+ scanf("%d",&row);
+ printf("Enter the columns of 1 matrix");
+ scanf("%d",&col); 
+ printf("Enter the elements of 1 matrix");
+  for(i=0;i<row;i++)
+   {
+     for(j=0;j<col;j++)
+        {
+          scanf("%d",&arr[i][j]);
+        }
+   }
+ printf("Enter the elements of 2 matrix");
+ for(i=0;i<row;i++)
+   {  
+      for(j=0;j<col;j++)
+        {
+            scanf("%d",&arr1[i][j]);
+       }
+    }
+for(i=0;i<row;i++)
+{ 
+   for(j=0;j<col;j++)
+   {
+      sum[i][j]= arr[i][j]+arr1[i][j];
+     }
+}
+for(i=0;i<row;i++)
+ { 
+    for(j=0;j<col;j++)
+     {
+         printf("  %d",sum[i][j]);
+           if(j==col-1)
+                 printf("\n\n");
+      }
+ }
+return 0;
+}
+ ```
+ **OUTPUT**:
+ ```
+ Enter the rows of 1 matrix2
+Enter the columns of 1 matrix2
+Enter the elements of 1 matrix1
+2
+3
+4
+Enter the elements of 2 matrix2
+3
+4
+5
+  3  5
+
+  7  9
+```
+## 22:Write a program to show Matrix multipication
  ```
 #include<stdio.h>
 int main()
@@ -754,68 +811,6 @@ Enter the elements of second matrix:
 product of the matrix:
 15      22
 23      34
-```
-## 22:Write a program to show Matrix addition
- ```
-  #include<stdio.h>
-int main()
-{
-  int row,col,row1,col1,i,j;
-   int arr[10][10],arr1[10][10],sum[10][10];
- printf("Enter the rows of 1 matrix");
- scanf("%d",&row);
- printf("Enter the columns of 1 matrix");
- scanf("%d",&col); 
- printf("Enter the elements of 1 matrix");
-  for(i=0;i<row;i++)
-   {
-     for(j=0;j<col;j++)
-        {
-          scanf("%d",&arr[i][j]);
-        }
-   }
- printf("Enter the elements of 2 matrix");
- for(i=0;i<row;i++)
-   {  
-      for(j=0;j<col;j++)
-        {
-            scanf("%d",&arr1[i][j]);
-       }
-    }
-for(i=0;i<row;i++)
-{ 
-   for(j=0;j<col;j++)
-   {
-      sum[i][j]= arr[i][j]+arr1[i][j];
-     }
-}
-for(i=0;i<row;i++)
- { 
-    for(j=0;j<col;j++)
-     {
-         printf("  %d",sum[i][j]);
-           if(j==col-1)
-                 printf("\n\n");
-      }
- }
-return 0;
-}
- ```
- **OUTPUT**:
- ```
- Enter the rows of 1 matrix2
-Enter the columns of 1 matrix2
-Enter the elements of 1 matrix1
-2
-3
-4
-Enter the elements of 2 matrix2
-3
-4
-5
-  3  5
-
-  7  9
 ```
 
 <!--stackedit_data:

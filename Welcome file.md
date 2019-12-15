@@ -683,7 +683,7 @@ Largest element of 9
  ```
 ## 21:Write a program to show Matrix addition
  ```
-  #include<stdio.h>
+   #include<stdio.h>
 int main()
 {
   int row,col,row1,col1,i,j;
@@ -729,19 +729,14 @@ return 0;
  ```
  **OUTPUT**:
  ```
- Enter the rows of 1 matrix2
+Enter the rows of 1 matrix2
 Enter the columns of 1 matrix2
-Enter the elements of 1 matrix1
-2
-3
-4
-Enter the elements of 2 matrix2
-3
-4
-5
-  3  5
+Enter the elements of 1 matrix3 1 4 2
+Enter the elements of 2 matrix5 3 5 1
 
-  7  9
+  8  4
+
+  9  3
 ```
 ## 22:Write a program to show Matrix multipication
  ```
